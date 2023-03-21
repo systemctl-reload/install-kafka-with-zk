@@ -13,3 +13,20 @@ Upon completion, you should get a similar output when doing  `java -version`:
     openjdk version "11.0.10" 2021-01-19 LTS
     OpenJDK Runtime Environment Corretto-11.0.10.9.1 (build 11.0.10+9-LTS)
     OpenJDK 64-Bit Server VM Corretto-11.0.10.9.1 (build 11.0.10+9-LTS, mixed mode)shell
+
+## 2) Install Apache Kafka
+
+    cd /opt/
+    
+    wget https://archive.apache.org/dist/kafka/3.0.0/kafka_2.13-3.0.0.tgz
+    
+    sudo tar xzf kafka_2.13-3.0.0.tgz
+    
+    cd kafka_2.13-3.0.0/
+    
+    sudo apt-get install vim -y
+    
+    vim ~/.bashrc
+    
+    PATH="$PATH:/opt/kafka_2.13-3.0.0/bin"
+
