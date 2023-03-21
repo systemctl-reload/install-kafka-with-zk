@@ -30,3 +30,28 @@ Upon completion, you should get a similar output when doing  `java -version`:
     
     PATH="$PATH:/opt/kafka_2.13-3.0.0/bin"
 
+## 3) start zookeeper
+
+    sudo /opt/kafka_2.13-3.0.0/bin/zookeeper-server-start.sh /opt/kafka_2.13-3.0.0/config/zookeeper.properties
+    
+    ss -tuna | grep 2181
+   
+## 4) start kafka
+
+    sudo /opt/kafka_2.13-3.0.0/bin/kafka-server-start.sh /opt/kafka_2.13-3.0.0/config/server.properties
+    
+    ss -tuna | grep 9092
+
+## 5) Changing the Kafka and Zookeeper data storage directory
+
+For Zookeeper edit the zookeeper.properties file
+
+    sudo vim /opt/kafka_2.13-3.0.0/config/zookeeper.properties 
+    
+    >>> dataDir=/opt/kafka_2.13-3.0.0/data/zookeeper
+    
+For kafka edit the server.properties file
+
+    sudo vim /opt/kafka_2.13-3.0.0/config/server.properties
+    >>> log.dirs=/opt/kafka_2.13-3.0.0/data/kafka
+
