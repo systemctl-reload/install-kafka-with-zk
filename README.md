@@ -24,8 +24,6 @@ Upon completion, you should get a similar output when doing  `java -version`:
     
     cd kafka_2.13-3.0.0/
     
-    sudo apt-get install vim -y
-    
     vim ~/.bashrc
     
     PATH="$PATH:/opt/kafka_2.13-3.0.0/bin"
