@@ -62,7 +62,7 @@ For kafka edit the server.properties file
 
     kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic first_topic
     
-## 7) Prodiucer & Consumer
+## 7) Producer & Consumer
 
     kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first_topic
 
