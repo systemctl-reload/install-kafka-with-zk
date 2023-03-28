@@ -18,7 +18,7 @@ Upon completion, you should get a similar output when doing  `java -version`:
 
     cd /opt/
     
-    wget https://archive.apache.org/dist/kafka/3.0.0/kafka_2.13-3.0.0.tgz
+    sudo wget https://archive.apache.org/dist/kafka/3.0.0/kafka_2.13-3.0.0.tgz
     
     sudo tar xzf kafka_2.13-3.0.0.tgz
     
