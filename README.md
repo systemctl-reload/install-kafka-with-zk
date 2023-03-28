@@ -51,5 +51,13 @@ For Zookeeper edit the zookeeper.properties file
 For kafka edit the server.properties file
 
     sudo vim /opt/kafka_2.13-3.0.0/config/server.properties
+    
     >>> log.dirs=/opt/kafka_2.13-3.0.0/data/kafka
 
+## 6) Create first topic
+
+    kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --create --partitions 3 --replication-factor 1
+
+    kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+    kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic first_topic
